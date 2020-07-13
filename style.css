@@ -1,1 +1,44 @@
+/* 
+Colors to be using: 
+Aero Blue: BFFFF1 -> cool blue
+Oxford Blue: 0C1B33 -> Studious Blue
+Hunter green: 26532B
+Teal Blue: 007991
+Majorelle Blue: 6E44FF */
+
+
+/* Style intial nav bar for desktop view*/
+*{
+  font-family:'Russo One'
+
+}
+.nav{
+  margin:0;
+  padding: 10px 0px 10px 0px;
+  background-color: #BFFFF1;
+  text-align:center;
+}
+
+.nav li {
+  display:inline;
+  padding: 0;
+  margin:0;
+}
+
+/* Create hamburger menu for CSS  */ 
+
+
+/* Add sub classes for link */
+
+
+/* Style heading area */
+
+
 /* Create hamburger menu for CSS  */
+
+
+
+/* Style p sections for descriptions here along with headers */
+p{
+  font-size:8px;
+}
