@@ -1,7 +1,9 @@
 # Otakupedia
 
 ## Project Description
-Using the Jikan api which gets information from the my anime list site, it will show the top rated/airing anime, and have a section where they can search various anime and add it to a section that lists the shows they have seen. 
+Using the Jikan api which gets information from the my anime list site, it will show the top rated/airing anime, and have a section where they can search various anime and add it to a section that lists the shows they have seen.<br>
+
+## API and Data Sample
 Initial Link:  https://api.jikan.moe/v3
 ```{
     “Author”: “@irfanDahir”,
@@ -57,9 +59,9 @@ POST-MVP:
 |  Day | Deliverable | Status
 |---|---| ---|
 |July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|July 13| Project Approval  | Incomplete
-|July 14| Initial Structure of app and pseudocode| Incomplete
-|July 15| Actual Coding| Incomplete
+|July 13| Project Approval, start on structure and pseudocode  | Incomplete
+|July 14| JS Coding of functionality| Incomplete
+|July 15| Designing and Testing| Incomplete
 |July 16| MVP | Incomplete
 |July 17| Presentations | Incomplete
 
