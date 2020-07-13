@@ -1,9 +1,7 @@
 # Otakupedia
 
 ## Project Description
-Using the Jikan api which gets information from the my anime list site, it will show like the top rated anime, and have a section for the users’ anime they’ve seen, etc. For post MVP I want to add a randomizer that pops up a random anime for as a suggestion for someone looking to find something new to watch. 
-
-## API and Data Sample
+Using the Jikan api which gets information from the my anime list site, it will show the top rated/airing anime, and have a section where they can search various anime and add it to a section that lists the shows they have seen. 
 Initial Link:  https://api.jikan.moe/v3
 ```{
     “Author”: “@irfanDahir”,
@@ -43,7 +41,7 @@ Searching an actual anime:  https://api.jikan.moe/v3/search/anime?q=Grand Blue (
 }
 ```
 ## Wireframes
-The wireframe is linked above in my repo 
+The wireframe is linked <a href="https://git.generalassemb.ly/kbongco/Otakupedia/blob/master/Otakupedia.png">Here for desktop</a>
 
 ### MVP/PostMVP
 -have the JIKAN API working to show top/trending anime in the top/trending anime section, and show a small description or rating<br>
@@ -71,6 +69,7 @@ Priority matrix photo is uploaded above in the repo
 ## Timeframes
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
+|Project Prompt | H | 8hrs| 6hrs | -hrs |
 |Initial Core Structure | H | 2hrs| -hrs | -hrs |
 | HTML Structure | H | 2.5hrs| -hrs | -hrs |
 | Working with API | H | 3hrs| -hrs | -hrs |
@@ -81,4 +80,4 @@ Priority matrix photo is uploaded above in the repo
 | Writing JS Code | H | 4hrs| -hrs | -hrs |
 | Writing pseudocode | H | 2.5hrs| -hrs | -hrs |
 | Testing of App| L | 3hrs| -hrs | -hrs |
-| Total | H | -hrs| -hrs | -hrs |
+| Total | H | 41.5hrs| 6hrs | -hrs |
