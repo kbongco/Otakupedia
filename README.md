@@ -64,7 +64,7 @@ POST-MVP:
 |July 17| Presentations | Incomplete
 
 ## Priority Matrix
-Priority matrix photo is uploaded above in the repo
+The priority matrix is linked <a href="https://photos.app.goo.gl/8uVCgdv83B3CCGRe9">here</a>
 
 ## Timeframes
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
