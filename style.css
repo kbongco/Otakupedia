@@ -9,21 +9,62 @@ Majorelle Blue: 6E44FF */
 
 /* Style intial nav bar for desktop view*/
 *{
-  font-family:'Russo One'
+  font-family:'Russo One';
 
 }
-.nav{
+nav{
   margin:0;
   padding: 10px 0px 10px 0px;
   background-color: #BFFFF1;
   text-align:center;
 }
-
-.nav li {
+ul{
+  list-style-type:none;
+}
+nav li {
   display:inline;
-  padding: 0;
+  padding: 20px;
   margin:0;
 }
+/* Style links  */
+a{
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+.nav li{
+  font-size:18px;
+  padding:15px 5px;
+
+}
+
+/* .nav li a{
+  display:block;
+} */
+
+/* Responsive menu */
+.nav{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:center;
+  background-color: #BFFFF1;
+}
+.bars{
+  background:#999;
+  display:inline-block;
+  height:2px;
+  position:relative;
+  width:18px;
+}
+
+.bars::before, .bars::after{
+  
+}
+
 
 /* Create hamburger menu for CSS  */ 
 
@@ -32,6 +73,9 @@ Majorelle Blue: 6E44FF */
 
 
 /* Style heading area */
+.heading{
+
+}
 
 
 /* Create hamburger menu for CSS  */
@@ -40,5 +84,5 @@ Majorelle Blue: 6E44FF */
 
 /* Style p sections for descriptions here along with headers */
 p{
-  font-size:8px;
+  font-size:12px;
 }
