@@ -5,48 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="app.js"></script>
   <title>Otakupedia</title>
 </head>
+<body>
 <div class ='nav'>
  <!-- Create a nav bar with links going to top, search, etc-->
- <ul>
-   <li>About</li>
-   <li>Top and Trending</li>
-   <li>Your Stuff!</li>
-   <li>Random</li>
+ <nav>
+ <ul class = 'nav'>
+   <li><a href="#">About</a></li>
+   <li><a href="#">Top and Trending</a></li>
+   <li><a href="#">Your Stuff!</a></li>
+   <li><a href="#">Random</a></li>
+   <li class='toggle'><span class ='bars'></span></li>
 
  </ul>
+ <nav>
 </div>
 <div class = 'heading'>
-  <!-- Create a heading here for name  of app-->
-  <!-- Add a section explaining what "otaku means" -->
-  <!-- Create box model for heading -->
 <h1>Otakupedia</h1>
 <p id = 'def'>Otaku: (おたく or オタク):In english, the simiplified definition is a nerd who loves
 anime, manga, and Japanese video games. This is a site where you can find 
-the top/trending anime nowadays as well as if you're in a slump and just 
-finished binging a show, no matter you can use the randomizer to find something new!
+the top/trending anime nowadays and if you're looking for a new show to binge since "My hero academia"
+Season 4 just finished and you wanna fill the void? Try the randomizer, you might find your next favorite ;)
 </p>
 </div>
 
-<body>
-  <div id ="toptrending">
-  <!-- Create heading here to show top/trending anime  -->
+
+<div class ='topandtrending'>
+    <h2>Top and Trending Anime </h2>
   <!-- Create box/div here to have showing top anime and trending -->
   <!-- Use flexbox here for the animes to be sorted  -->
+  <!-- Refer to link in .txt file and cite it later. -->
+  <p>Top anime here!</p>
+</div>
+
+
+
+  <div class ='userinput'>
+    <div id ='search'>
+      <h3>Looking for something new?</h3>
+      <form>
+        <label for='Title'>Title</label>
+        <input type='text'>
+        <button id='search'>Search</button>
+      </form>
+      <br>
+      <br>
+      <h3 id ='other'>Don't know what you want? Try the random button!</h3>
+      <button id='random'>Plus Ultra!</button>
+      <!-- Search generator  -->
+      <!-- Show results here  -->
+      <!-- Have an option for viewers/users to  add to their section-->
+      <!-- The id for the DOM goes here -->
+      <!-- create form element -->
+      <!-- create add to userlist element to DOM?  -->
+    </div>
+
+    <div id ='userlist'>
+      <!-- Section for those who haven't viewed or seen anime-->
+      <!-- use box model to arrange this section on the left side -->
+      <!-- The id for the DOM is above -->
+
+
+    </div>
   </div>
 
-  <div id ='search'>
-    <!-- Search generator  -->
-    <!-- Show results here  -->
-    <!-- Have an option for viewers/users to  add to their section-->
-  </div>
-
-  <div id ='userlist'>
-    <!-- Section for those who haven't viewed or seen anime-->
-
-  </div>
 
 </body>
 </html>
