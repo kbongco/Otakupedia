@@ -22,7 +22,7 @@ const topAnime = async () => {
   try {
     const response = await axios.get(topURL)
     // console.log(response.data.top)
-    topAnimu(response.data.top)
+    topFiftyAnime(response.data.top)
   } catch (error) {
     console.error(`This is my ${error}`)
   }
@@ -30,8 +30,10 @@ const topAnime = async () => {
 topAnime()
 
 
-
-
+todaysDate = () => {
+  document.getElementById("date").innerHTML = Date();
+}
+todaysDate()
 
 
 
