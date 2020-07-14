@@ -26,6 +26,7 @@ nav li {
   padding: 20px;
   margin:0;
 }
+
 /* Style links  */
 a{
   text-decoration:none;
@@ -41,9 +42,28 @@ a:hover{
 
 }
 
+h1, h2, h4{
+  text-align:center;
+  margin:0 0 0 0;
+}
+h3{
+  margin: 0 0 0 0;
+  margin:10px;
+}
+
+
+.heading{
+  background-color:#007991;
+}
 /* .nav li a{
   display:block;
 } */
+.topandtrending{
+background-color:#26532B;
+color:white;
+padding:10px 0 10px 0;
+}
+
 
 /* Responsive menu */
 .nav{
@@ -53,18 +73,27 @@ a:hover{
   align-items:center;
   background-color: #BFFFF1;
 }
-.bars{
-  background:#999;
-  display:inline-block;
-  height:2px;
+#search{
+  background-color:#0c1B33;
+  padding:10px 0 10px 0;
+ color:white;
+
+}
+
+#userresult{
   position:relative;
-  width:18px;
+
 }
 
-.bars::before, .bars::after{
-  
+#userlist{
+  background-color:#6E44FF;
 }
 
+footer{
+  text-align:center;
+  background-color:black;
+  color:white;
+}
 
 /* Create hamburger menu for CSS  */ 
 
@@ -72,10 +101,6 @@ a:hover{
 /* Add sub classes for link */
 
 
-/* Style heading area */
-.heading{
-
-}
 
 
 /* Create hamburger menu for CSS  */
@@ -84,5 +109,6 @@ a:hover{
 
 /* Style p sections for descriptions here along with headers */
 p{
-  font-size:12px;
+  font-size:14px;
+  margin: 0 0 0 0;
 }
