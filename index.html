@@ -1,77 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="app.js" defer ></script>
+  <script src="app.js" defer></script>
   <title>Otakupedia</title>
 </head>
+
 <body>
-<div class ='nav'>
- <!-- Create a nav bar with links going to top, search, etc-->
- <nav>
- <ul class = 'nav'>
-   <li><a href="#">About</a></li>
-   <li><a href="#">Top and Trending</a></li>
-   <li><a href="#">Random</a></li>
-   <li><a href="#">Your Stuff</a></li>
-   <li class='toggle'><span class ='bars'></span></li>
+  <div class='nav'>
+    <!-- Create a nav bar with links going to top, search, etc-->
+    <nav>
+      <ul class='nav'>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Top and Trending</a></li>
+        <li><a href="#">Random</a></li>
+        <li><a href="#">Your Stuff</a></li>
+        <li class='toggle'><span class='bars'></span></li>
 
- </ul>
- <nav>
-</div>
+      </ul>
+      <nav>
+  </div>
 
-<div class = 'heading'>
-<h1>Otakupedia</h1>
-    <p id = 'def'>Otaku: (おたく or オタク):In english, the simiplified definition is a nerd who loves
-    anime, manga, and Japanese video games. This is a site where you can find 
-    the top/trending anime nowadays and if you're looking for a new show to binge since "My hero academia"
-    Season 4 just finished and you wanna fill the void? Try the randomizer, you might find your next favorite ;)
+  <div class='heading'>
+    <h1>Otakupedia</h1>
+    <p id='def'>Otaku: (おたく or オタク):In english, the simiplified definition is a nerd who loves
+      anime, manga, and Japanese video games. This is a site where you can find
+      the top/trending anime nowadays and if you're looking for a new show to binge since "My hero academia"
+      Season 4 just finished and you wanna fill the void? Try the randomizer, you might find your next favorite ;)
     </p>
-</div>
+  </div>
 
 
-<div class ='topandtrending'>
-    <h2>Top and Trending Anime for today: <p id ='date'></p>  </h2>
-  <!-- Create box/div here to have showing top anime and trending -->
-  <!-- Use flexbox here for the animes to be sorted  -->
-  <!-- Refer to link in .txt file and cite it later. -->
-  <p>Top anime here!</p>
-</div>
+  <div class='topandtrending'>
+    <h2>Top and Trending Anime for today: <p id='date'></p>
+    </h2>
+    <br>
+    <!-- Create box/div here to have showing top anime and trending -->
+    <!-- Use flexbox here for the animes to be sorted  -->
+    <!-- Refer to link in .txt file and cite it later. -->
+  </div>
 
 
 
-  <div class ='userinput'>
-    <div id ='search'>
+  <div class='userinput'>
+    <div id='search'>
       <h3>Looking for something new?</h3>
       <form>
         <label for='Title'>Title</label>
-        <input type='text'>
+        <input type='text' id='blank' placeholder='Animu Title'></input>
         <button id='search'>Search</button>
       </form>
       <br>
       <br>
-      <h3 id ='other'>Don't know what you want?<br>
-       Try the random button and go plus ultra!</h3>
+      <h3 id='other'>Don't know what you want?<br>
+        Try the random button and go plus ultra!</h3>
       <button id='random'>Plus Ultra!</button>
+      <br>
+      <br>
+      <br>
+      <h3 id='userresult'>Results</h3>
+      <p>Like what you see? Add it to your list below!</p>
+      <div class="generatedresult">
 
-     <h3 id='userresult'>Results</h3>
-     <p>Like what you see? Add it to your list below!</p>
-        <div class="generatedresult">
-      <!-- Search generator  -->
-      <!-- Show results here  -->
-      <!-- Have an option for viewers/users to  add to their section-->
-      <!-- The id for the DOM goes here -->
-      <!-- create form element -->
-      <!-- create add to userlist element to DOM?  -->
+      </div>
     </div>
-        </div>
 
-    <div id ='userlist'>
-        <h4>Your list </h4>
+    <div id='userlist'>
+      <h4>Your list </h4>
       <!-- Section for those who haven't viewed or seen anime-->
       <!-- use box model to arrange this section on the left side -->
       <!-- The id for the DOM is above -->
@@ -87,4 +87,5 @@
 
 
 </body>
+
 </html>
