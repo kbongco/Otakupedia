@@ -1,5 +1,5 @@
 topURL = "https://api.jikan.moe/v3/top/anime/1/airing"
-searchAnime = " https://api.jikan.moe/v3/search/anime/{id}(/request)"
+// searchAnime = `https://api.jikan.moe/v3/search/anime?q=${animeTitles}`
 
 const topFiftyAnime = (animes) => {
   animes.forEach((anime) => {
@@ -7,11 +7,10 @@ const topFiftyAnime = (animes) => {
     animeTitle.innerText = anime.title
     document.querySelector('.topandtrending').append(animeTitle)
     let poster = document.createElement('img')
-    poster.src = anime.img_url
+    poster.src = anime.image_url
     document.querySelector('.topandtrending').append(poster)
   })
-  console.log(animes)
-  
+
 }
 
 
@@ -26,7 +25,7 @@ const topAnime = async () => {
   } catch (error) {
     console.error(`This is my ${error}`)
   }
-} 
+}
 topAnime()
 
 
@@ -37,6 +36,44 @@ todaysDate()
 
 
 
+//testing generated result
+
+const searchAnime = (results) => {
+  results.forEach((anime) => {
+    let newDiv = document.createElement('div')
+    let oneTitle = document.createElement('h4')
+    oneTitle.innerText = anime.title
+    newDiv.appendChild(oneTitle)
+    let onePoster = document.querySelector('img')
+    onePoster.src = anime.image_url
+    newDiv.appendChild(onePoster)
+    document.querySelector('.generatedresult').append(newDiv)
+ })
+
+}
+
+//Create a function for searching individual anime 
+const ichiAnime = async (e) => {
+  e.preventDefault();
+  const animeTitle = document.querySelector('#blank').value
+  const url = `https://api.jikan.moe/v3/search/anime?q=${animeTitle}`
+  try {
+    const animeResponse = await axios.get(url)
+    searchAnime(animeResponse.data.results)
+    // console.log(animeResponse.data)
+  } catch (error) {
+    console.error(`Omae wa mo shindeiru. The app is dead thanks to ${error}`)
+  }
+}
+
+
+
+
+
+
+//Create Event listener
+const search = document.querySelector('#search')
+search.addEventListener('click', ichiAnime)
 
 //Appending things to the other DOM in the divs of search and userlist 
 
