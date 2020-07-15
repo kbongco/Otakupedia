@@ -3,12 +3,16 @@ topURL = "https://api.jikan.moe/v3/top/anime/1/airing"
 
 const topFiftyAnime = (animes) => {
   animes.forEach((anime) => {
-    let animeTitle = document.createElement('h4')
+    let newTopdiv = document.createElement('div')
+    let animeTitle = document.createElement('h3')
     animeTitle.innerText = anime.title
-    document.querySelector('.topandtrending').append(animeTitle)
+    let newTopClass = newTopdiv.classList.add('todaystop')
+    newTopdiv.appendChild(animeTitle)
     let poster = document.createElement('img')
     poster.src = anime.image_url
-    document.querySelector('.topandtrending').append(poster)
+    let topImgClass = poster.classList.add('topimg')
+    newTopdiv.appendChild(poster)
+    document.querySelector('.topandtrending').append(newTopdiv)
   })
 
 }
@@ -76,14 +80,15 @@ const ichiAnime = async (e) => {
 const search = document.querySelector('#search')
 search.addEventListener('click', ichiAnime)
 
-//Appending things to the other DOM in the divs of search and userlist 
+// Appending things to the other DOM in the divs of search and userlist 
 const viewersAnime = () => {
-  const results = document.querySelector('.results')
-  results.addEventListener('click', () =>
-  localStorage.setItem(searchAnime)
+  const resultsPoster = document.querySelector('.results')
+  resultsPoster.addEventListener('click', () =>
+  localStorage.setItem(searchAnime, resultsPoster)
   )
 
 }
+
 
 //create another script to search and find randomly (POST MVP)
 
