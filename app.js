@@ -24,7 +24,7 @@ const topAnime = async () => {
   const topAnime = topURL
   try {
     const response = await axios.get(topURL)
-    // console.log(response.data.top)
+    console.log(response.data.top)
     topFiftyAnime(response.data.top)
   } catch (error) {
     console.error(`This is my ${error}`)
@@ -53,6 +53,12 @@ const searchAnime = (results) => {
     onePoster.src = anime.image_url
     let imgClass = onePoster.classList.add('imgposter')
     newDiv.appendChild(onePoster)
+    let button= document.createElement('button')
+    let buttonText = document.createTextNode('Add to your list!')
+    let buttonClass = button.classList.add('addlist')
+    button.addEventListener('click',topAnime)
+    button.appendChild(buttonText);
+    newDiv.appendChild(button)
     document.querySelector('.generatedresult').append(newDiv)
  })
 
@@ -71,6 +77,21 @@ const ichiAnime = async (e) => {
   }
 }
 
+//Create an event listener to show anime info
+// const addingList = document.querySelector('.addList');
+
+
+//Creating a function to add to an event listener
+const userAnime = () => {
+  let usersAnime = document.querySelectorAll('.generatedresults')
+  for (let i = 0; i < usersAnime.length; i++) {
+    usersAnime[i].addEventListener('click', () => {
+      const userSelected = usersAnime[i].classList.add('userselected')
+      let userFave = document.querySelectorAll('#userselected')
+      userFave.append(userSelected)
+    })
+  }
+}
 
 
 
@@ -80,14 +101,6 @@ const ichiAnime = async (e) => {
 const search = document.querySelector('#search')
 search.addEventListener('click', ichiAnime)
 
-// Appending things to the other DOM in the divs of search and userlist 
-const viewersAnime = () => {
-  const resultsPoster = document.querySelector('.results')
-  resultsPoster.addEventListener('click', () =>
-  localStorage.setItem(searchAnime, resultsPoster)
-  )
-
-}
 
 
 //create another script to search and find randomly (POST MVP)
