@@ -77,7 +77,13 @@ const search = document.querySelector('#search')
 search.addEventListener('click', ichiAnime)
 
 //Appending things to the other DOM in the divs of search and userlist 
+const viewersAnime = () => {
+  const results = document.querySelector('.results')
+  results.addEventListener('click', () =>
+  localStorage.setItem(searchAnime)
+  )
 
+}
 
 //create another script to search and find randomly (POST MVP)
 
