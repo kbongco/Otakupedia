@@ -43,9 +43,11 @@ const searchAnime = (results) => {
     let newDiv = document.createElement('div')
     let oneTitle = document.createElement('h4')
     oneTitle.innerText = anime.title
+    let newClass = newDiv.classList.add("results")
     newDiv.appendChild(oneTitle)
     let onePoster = document.querySelector('img')
     onePoster.src = anime.image_url
+    let imgClass = onePoster.classList.add('imgposter')
     newDiv.appendChild(onePoster)
     document.querySelector('.generatedresult').append(newDiv)
  })
@@ -60,7 +62,6 @@ const ichiAnime = async (e) => {
   try {
     const animeResponse = await axios.get(url)
     searchAnime(animeResponse.data.results)
-    // console.log(animeResponse.data)
   } catch (error) {
     console.error(`Omae wa mo shindeiru. The app is dead thanks to ${error}`)
   }
