@@ -64,6 +64,16 @@ color:white;
 padding:10px 0 10px 0;
 }
 
+.todaystop{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+}
+
+.topimg{
+  height:310px;
+  width:150px;
+}
 
 /* Responsive menu */
 .nav{
