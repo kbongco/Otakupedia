@@ -1,6 +1,17 @@
 topURL = "https://api.jikan.moe/v3/top/anime/1/airing"
 // searchAnime = `https://api.jikan.moe/v3/search/anime?q=${animeTitles}`
 
+
+//how do I cite this? I got help from w3schools...
+toggleMenu = () => {
+  let links = document.getElementById('nav');
+  if (links.style.display === 'block') {
+    links.style.display = 'none';
+  } else {
+    links.style.display ='block'
+  }
+}
+
 const topFiftyAnime = (animes) => {
   animes.forEach((anime) => {
     let newTopdiv = document.createElement('div')
@@ -55,8 +66,8 @@ const searchAnime = (results) => {
     newDiv.appendChild(onePoster)
     let button= document.createElement('button')
     let buttonText = document.createTextNode('Add to your list!')
-    let buttonClass = button.classList.add('addlist')
-    button.addEventListener('click',topAnime)
+    button.classList.add('addlist')
+    button.addEventListener('click',() => userAnime(anime))
     button.appendChild(buttonText);
     newDiv.appendChild(button)
     document.querySelector('.generatedresult').append(newDiv)
@@ -77,22 +88,26 @@ const ichiAnime = async (e) => {
   }
 }
 
-//Create an event listener to show anime info
-// const addingList = document.querySelector('.addList');
+
+
 
 
 //Creating a function to add to an event listener
-const userAnime = () => {
-  let usersAnime = document.querySelectorAll('.generatedresults')
-  for (let i = 0; i < usersAnime.length; i++) {
-    usersAnime[i].addEventListener('click', () => {
-      const userSelected = usersAnime[i].classList.add('userselected')
-      let userFave = document.querySelectorAll('#userselected')
-      userFave.append(userSelected)
-    })
-  }
-}
+const userAnime = (anime) => { 
+  let searchedAnime = document.getElementById('results')
 
+
+    let usersDiv = document.createElement('div')
+    let faveTitle = document.createElement('h4')
+    faveTitle.innerText = anime.title
+    usersDiv.appendChild(faveTitle)
+    let favePoster = document.querySelector('img')
+    favePoster.src = anime.image_url
+    usersDiv.appendChild(favePoster)
+    document.querySelector('.userselected').append(usersDiv)
+  
+    
+}
 
 
 
@@ -104,4 +119,9 @@ search.addEventListener('click', ichiAnime)
 
 
 //create another script to search and find randomly (POST MVP)
-
+//Trying to figure out randomizer 
+let anime_min = 90;
+let anime_max = 100; 
+let mal_id = (anime_min, anime_max) => {
+  return Math.floor(Math.random() * (anime_max - anime_min + 1) + anime_min)
+}

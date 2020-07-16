@@ -1,0 +1,6 @@
+https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6
+https://www.freecodecamp.org/news/horizontal-scrolling-using-flexbox-f9d16817f742/
+https://www.youtube.com/watch?v=H-AmJSMcNfI
+https://stackoverflow.com/questions/19183180/how-to-save-an-image-to-localstorage-and-display-it-on-the-next-page
+https://hacks.mozilla.org/2012/02/saving-images-and-files-in-localstorage/
+https://www.w3schools.com/howto/howto_js_mobile_navbar.asp

@@ -80,6 +80,6 @@ The priority matrix is linked <a href="https://photos.app.goo.gl/8uVCgdv83B3CCGR
 | Working on Design with CSS| H | 3hrs| 5hrs | 5hrs |
 | Advanced CSS| L | 3hrs| -hrs | -hrs |
 | Writing JS Code | H | 4hrs| 8hrs | 8hrs |
-| Writing pseudocode | H | 2.5hrs| 2.5hrs | -hrs |
+| Writing pseudocode | H | 2.5hrs| 2.5hrs | 2.5hrs |
 | Testing of App| L | 3hrs| -hrs | -hrs |
 | Total | H | 41.5hrs| 8hrs | 8hrs |
