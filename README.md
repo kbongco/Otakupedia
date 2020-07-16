@@ -60,8 +60,8 @@ POST-MVP:
 |---|---| ---|
 |July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |July 13| Project Approval, start on structure and pseudocode  | Complete
-|July 14| JS Coding of functionality| Incomplete
-|July 15| Designing and Testing| Incomplete
+|July 14| JS Coding of functionality| Complete
+|July 15| Designing and Testing| Complete
 |July 16| MVP | Incomplete
 |July 17| Presentations | Incomplete
 
@@ -73,13 +73,13 @@ The priority matrix is linked <a href="https://photos.app.goo.gl/8uVCgdv83B3CCGR
 | --- | :---: |  :---: | :---: | :---: |
 |Project Prompt | H | 8hrs| 6hrs | 6hrs |
 |Initial Core Structure | H | 2hrs| 2hrs | 2hrs |
-| HTML Structure | H | 2.5hrs| -hrs | -hrs |
-| Working with API | H | 3hrs| -hrs | -hrs |
-| Fixing functionality to have anime be displayed| H | 4hrs| -hrs | -hrs |
-| Adding functionality to search bar | H | 3hrs| -hrs | -hrs |
-| Working on Design with CSS| H | 3hrs| -hrs | -hrs |
+| HTML Structure | H | 2.5hrs| 4hrs | -4hrs |
+| Working with API | H | 3hrs| 5hrs | -hrs |
+| Fixing functionality to have anime be displayed| H | 4hrs| 6hrs | -hrs |
+| Adding functionality to search bar | H | 3hrs| 4hrs | 4hrs |
+| Working on Design with CSS| H | 3hrs| 5hrs | 5hrs |
 | Advanced CSS| L | 3hrs| -hrs | -hrs |
-| Writing JS Code | H | 4hrs| -hrs | -hrs |
-| Writing pseudocode | H | 2.5hrs| -hrs | -hrs |
+| Writing JS Code | H | 4hrs| 8hrs | 8hrs |
+| Writing pseudocode | H | 2.5hrs| 2.5hrs | -hrs |
 | Testing of App| L | 3hrs| -hrs | -hrs |
 | Total | H | 41.5hrs| 8hrs | 8hrs |
