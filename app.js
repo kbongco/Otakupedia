@@ -17,11 +17,11 @@ const topFiftyAnime = (animes) => {
     let newTopdiv = document.createElement('div')
     let animeTitle = document.createElement('h3')
     animeTitle.innerText = anime.title
-    let newTopClass = newTopdiv.classList.add('todaystop')
+    newTopdiv.classList.add('todaystop')
     newTopdiv.appendChild(animeTitle)
     let poster = document.createElement('img')
     poster.src = anime.image_url
-    let topImgClass = poster.classList.add('topimg')
+    poster.classList.add('topimg')
     newTopdiv.appendChild(poster)
     document.querySelector('.topandtrending').append(newTopdiv)
   })
@@ -58,11 +58,11 @@ const searchAnime = (results) => {
     let newDiv = document.createElement('div')
     let oneTitle = document.createElement('h4')
     oneTitle.innerText = anime.title
-    let newClass = newDiv.classList.add("results")
+    newDiv.classList.add("results")
     newDiv.appendChild(oneTitle)
-    let onePoster = document.querySelector('img')
+    let onePoster = document.createElement('img')
     onePoster.src = anime.image_url
-    let imgClass = onePoster.classList.add('imgposter')
+    onePoster.classList.add('imgposter')
     newDiv.appendChild(onePoster)
     let button= document.createElement('button')
     let buttonText = document.createTextNode('Add to your list!')
@@ -94,6 +94,7 @@ const ichiAnime = async (e) => {
 
 //Creating a function to add to an event listener
 const userAnime = (anime) => { 
+  
   let searchedAnime = document.getElementById('results')
 
 
@@ -101,10 +102,11 @@ const userAnime = (anime) => {
     let faveTitle = document.createElement('h4')
     faveTitle.innerText = anime.title
     usersDiv.appendChild(faveTitle)
-    let favePoster = document.querySelector('img')
+  let favePoster = document.createElement('img')
     favePoster.src = anime.image_url
     usersDiv.appendChild(favePoster)
-    document.querySelector('.userselected').append(usersDiv)
+  document.querySelector('.userselected').append(usersDiv)
+ 
   
     
 }
