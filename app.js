@@ -8,7 +8,7 @@ toggleMenu = () => {
   if (links.style.display === 'block') {
     links.style.display = 'none';
   } else {
-    links.style.display ='block'
+    links.style.display = 'block'
   }
 }
 
@@ -64,14 +64,14 @@ const searchAnime = (results) => {
     onePoster.src = anime.image_url
     onePoster.classList.add('imgposter')
     newDiv.appendChild(onePoster)
-    let button= document.createElement('button')
+    let button = document.createElement('button')
     let buttonText = document.createTextNode('Add to your list!')
     button.classList.add('addlist')
-    button.addEventListener('click',() => userAnime(anime))
+    button.addEventListener('click', () => userAnime(anime))
     button.appendChild(buttonText);
     newDiv.appendChild(button)
     document.querySelector('.generatedresult').append(newDiv)
- })
+  })
 
 }
 
@@ -93,22 +93,21 @@ const ichiAnime = async (e) => {
 
 
 //Creating a function to add to an event listener
-const userAnime = (anime) => { 
-  
+const userAnime = (anime) => {
+
   let searchedAnime = document.getElementById('results')
-
-
-    let usersDiv = document.createElement('div')
-    let faveTitle = document.createElement('h4')
-    faveTitle.innerText = anime.title
-    usersDiv.appendChild(faveTitle)
+  let usersDiv = document.createElement('div')
+  let faveTitle = document.createElement('h3')
+  faveTitle.innerText = anime.title
+  usersDiv.classList.add('userchose')
+  usersDiv.appendChild(faveTitle)
   let favePoster = document.createElement('img')
-    favePoster.src = anime.image_url
-    usersDiv.appendChild(favePoster)
+  favePoster.src = anime.image_url
+  usersDiv.appendChild(favePoster)
   document.querySelector('.userselected').append(usersDiv)
- 
-  
-    
+
+
+
 }
 
 
@@ -121,9 +120,28 @@ search.addEventListener('click', ichiAnime)
 
 
 //create another script to search and find randomly (POST MVP)
-//Trying to figure out randomizer 
-let anime_min = 90;
-let anime_max = 100; 
-let mal_id = (anime_min, anime_max) => {
-  return Math.floor(Math.random() * (anime_max - anime_min + 1) + anime_min)
-}
+//Trying to figure out randomizer --> Generates a number between 90-100 to represent mal_id to search 
+//Ask about code below during TA hours 
+
+// let animeMin = 90;
+// let animeMax = 100; 
+// let malCalculate = (animeMin, animeMax) => {
+//   let result = Math.floor(Math.random() * (animeMax - animeMin + 1) + animeMin)
+//   return result
+// }
+// malCalculate(animeMin,animeMax)
+
+
+// randomUrl = `https://api.jikan.moe/v3/anime/${malCalculate}`
+
+// const randomAnimu = async () => {
+//   const randomAnimu = randomUrl;
+//   try {
+//     const randomResponse = await axios.get(randomUrl)
+//     console.log(randomResponse)
+//   }catch (error) {
+//     console.error(`Omae wa mo shindeiru. The app is dead thanks to ${error}`)
+//   }
+// }
+
+// randomAnimu()
