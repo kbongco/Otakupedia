@@ -168,6 +168,10 @@ a{
   right:0;
   top: 0;
 }
+.topimg{
+  display:none;
+}
+
 }
 
 /* Add sub classes for link */
