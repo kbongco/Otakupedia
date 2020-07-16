@@ -158,4 +158,4 @@ const randomAnimu = async () => {
 }
 
 const random = document.querySelector('#random')
-random.addEventListener('click', randomAnimu)
+random.addEventListener('click', randomAnimu);

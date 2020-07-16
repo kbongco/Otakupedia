@@ -83,3 +83,48 @@ The priority matrix is linked <a href="https://photos.app.goo.gl/8uVCgdv83B3CCGR
 | Writing pseudocode | H | 2.5hrs| 2.5hrs | 2.5hrs |
 | Testing of App| L | 3hrs| -hrs | -hrs |
 | Total | H | 41.5hrs| 8hrs | 8hrs |
+
+###Code Snippet 
+```
+const randomAnime = (random) => {
+  random.forEach((anime) => {
+    let randomDiv = document.createElement('div')
+    let randomTitle = document.createElement('h4')
+    randomTitle.innerText = anime.title
+    randomDiv.classList.add('randomresults')
+    randomDiv.appendChild(randomTitle)
+    let randomPoster = document.createElement('img')
+    randomPoster.image_url
+    randomDiv.appendChild(randomPoster)
+    let button = document.createElement('button')
+    let buttonText = document.createTextNode('Add to your list!')
+    button.classList.add('addlist')
+    button.addEventListener('click', () => userAnime(anime))
+    button.appendChild(buttonText);
+    randomDiv.appendChild(button)
+    document.querySelector('randomgenerated').append(randomDiv)
+  })
+}
+
+
+let animeMin = 90;
+let animeMax = 100; 
+let result = Math.floor(Math.random() * (animeMax - animeMin + 1) + animeMin)
+let malId = result
+
+
+randomUrl = `https://api.jikan.moe/v3/anime/${malId}`
+
+const randomAnimu = async () => {
+  const randomAnimu = randomUrl;
+  try {
+    const randomResponse = await axios.get(randomUrl)
+    randomAnime(randomResponse.data.results)
+  }catch (error) {
+    console.error(`Omae wa mo shindeiru. The app is dead thanks to ${error}`)
+  }
+}
+
+const random = document.querySelector('#random')
+random.addEventListener('click', randomAnimu)
+```
