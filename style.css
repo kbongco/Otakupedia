@@ -132,7 +132,43 @@ footer{
   height:50px;
 }
 /* Create hamburger menu for CSS  */ 
-
+/* I had some help with w3schools for the media query
+how do i cite this??  */
+@media only screen and (max-device-width:768px){
+.topandtrending{
+  flex-flow: row wrap;
+  width:unset;
+  height:50%;
+}
+.nav{
+  overflow:hidden;
+  position:relative;
+}
+a{ 
+  display:none;
+}
+#id {
+  color:white;
+  padding:14px 16px;
+  text-decoration:none;
+  font-size:17px;
+  display:block;
+}
+.nav a{
+  color:black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:17px;
+  display:block;
+}
+.nav a.icon {
+  background:black;
+  display:block;
+  position:absolute;
+  right:0;
+  top: 0;
+}
+}
 
 /* Add sub classes for link */
 
