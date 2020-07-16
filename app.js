@@ -1,5 +1,4 @@
 topURL = "https://api.jikan.moe/v3/top/anime/1/airing"
-// searchAnime = `https://api.jikan.moe/v3/search/anime?q=${animeTitles}`
 
 
 //how do I cite this? I got help from w3schools...
@@ -23,6 +22,12 @@ const topFiftyAnime = (animes) => {
     poster.src = anime.image_url
     poster.classList.add('topimg')
     newTopdiv.appendChild(poster)
+    let button = document.createElement('button')
+    let buttonText = document.createTextNode('Add to your list!')
+    button.classList.add('addlist')
+    button.addEventListener('click', () => userAnime(anime))
+    button.appendChild(buttonText);
+    newTopdiv.appendChild(button)
     document.querySelector('.topandtrending').append(newTopdiv)
   })
 
