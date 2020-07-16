@@ -1,15 +1,7 @@
 topURL = "https://api.jikan.moe/v3/top/anime/1/airing"
 
 
-//how do I cite this? I got help from w3schools...
-toggleMenu = () => {
-  let links = document.getElementById('nav');
-  if (links.style.display === 'block') {
-    links.style.display = 'none';
-  } else {
-    links.style.display = 'block'
-  }
-}
+
 
 const topFiftyAnime = (animes) => {
   animes.forEach((anime) => {
@@ -126,27 +118,44 @@ search.addEventListener('click', ichiAnime)
 
 //create another script to search and find randomly (POST MVP)
 //Trying to figure out randomizer --> Generates a number between 90-100 to represent mal_id to search 
-//Ask about code below during TA hours 
+const randomAnime = (random) => {
+  random.forEach((anime) => {
+    let randomDiv = document.createElement('div')
+    let randomTitle = document.createElement('h4')
+    randomTitle.innerText = anime.title
+    randomDiv.classList.add('randomresults')
+    randomDiv.appendChild(randomTitle)
+    let randomPoster = document.createElement('img')
+    randomPoster.image_url
+    randomDiv.appendChild(randomPoster)
+    let button = document.createElement('button')
+    let buttonText = document.createTextNode('Add to your list!')
+    button.classList.add('addlist')
+    button.addEventListener('click', () => userAnime(anime))
+    button.appendChild(buttonText);
+    randomDiv.appendChild(button)
+    document.querySelector('randomgenerated').append(randomDiv)
+  })
+}
 
-// let animeMin = 90;
-// let animeMax = 100; 
-// let malCalculate = (animeMin, animeMax) => {
-//   let result = Math.floor(Math.random() * (animeMax - animeMin + 1) + animeMin)
-//   return result
-// }
-// malCalculate(animeMin,animeMax)
+
+let animeMin = 90;
+let animeMax = 100; 
+let result = Math.floor(Math.random() * (animeMax - animeMin + 1) + animeMin)
+let malId = result
 
 
-// randomUrl = `https://api.jikan.moe/v3/anime/${malCalculate}`
+randomUrl = `https://api.jikan.moe/v3/anime/${malId}`
 
-// const randomAnimu = async () => {
-//   const randomAnimu = randomUrl;
-//   try {
-//     const randomResponse = await axios.get(randomUrl)
-//     console.log(randomResponse)
-//   }catch (error) {
-//     console.error(`Omae wa mo shindeiru. The app is dead thanks to ${error}`)
-//   }
-// }
+const randomAnimu = async () => {
+  const randomAnimu = randomUrl;
+  try {
+    const randomResponse = await axios.get(randomUrl)
+    randomAnime(randomResponse.data.results)
+  }catch (error) {
+    console.error(`Omae wa mo shindeiru. The app is dead thanks to ${error}`)
+  }
+}
 
-// randomAnimu()
+const random = document.querySelector('#random')
+random.addEventListener('click', randomAnimu)

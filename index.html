@@ -16,10 +16,10 @@
     <!-- Create a nav bar with links going to top, search, etc-->
     <nav>
       <ul id='nav'>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Top and Trending</a></li>
-        <li><a href="#">Random</a></li>
-        <li><a href="#">Your Stuff</a></li>
+        <li><a href="#def">About</a></li>
+        <li><a href="#topfifty">Top and Trending</a></li>
+        <li><a href="#randomsearch">Random Generator and search</a></li>
+        <li><a href="#userlist">Your Stuff</a></li>
         <li class='toggle'><span class='bars'></span></li>
 
       </ul>
@@ -35,41 +35,47 @@
     </p>
   </div>
 
-
-  <div class='topandtrending'>
-    <h2>Top and Trending Anime for today: <p id='date'></p>
-    </h2>
-    <br>
+  <div id='topfifty'>
+    <div class='topandtrending'>
+      <h2>Top and Trending Anime for today: <p id='date'></p>
+      </h2>
+      <br>
+    </div>
   </div>
 
 
+  <div id='randomsearch'>
+    <div class='userinput'>
+      <div class='search'>
+        <h3>Looking for something new?</h3>
+        <form>
+          <label for='Title'>Title</label>
+          <input type='text' id='blank' placeholder='Animu Title'></input>
+          <button id='search'>Search</button>
+        </form>
+        <br>
+        <br>
+        <h3 id='other'>Don't know what you want?<br>
+          Try the random button and go plus ultra!</h3>
+        <button id='random'>Plus Ultra!</button>
+        <br>
+        <br>
+        <br>
+        <h3 id='userresult'>Results</h3>
+        <p>Like what you see? Add it to your list below!</p>
+        <div class="generatedresult">
 
-  <div class='userinput'>
-    <div class='search'>
-      <h3>Looking for something new?</h3>
-      <form>
-        <label for='Title'>Title</label>
-        <input type='text' id='blank' placeholder='Animu Title'></input>
-        <button id='search'>Search</button>
-      </form>
-      <br>
-      <br>
-      <h3 id='other'>Don't know what you want?<br>
-        Try the random button and go plus ultra!</h3>
-      <button id='random'>Plus Ultra!</button>
-      <br>
-      <br>
-      <br>
-      <h3 id='userresult'>Results</h3>
-      <p>Like what you see? Add it to your list below!</p>
-      <div class="generatedresult">
-
+        </div>
       </div>
+    </div>
+    
+    <div class='randomgenerated'>
+      <p>randomly generated</p>
     </div>
 
     <div id='userlist'>
       <h4>Your list </h4>
-      <div class ="userselected">
+      <div class="userselected">
 
 
 

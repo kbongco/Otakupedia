@@ -180,19 +180,14 @@ a{
 .topimg{
   display:none;
 }
-
+.generatedresult{
+  flex-wrap:wrap;
+}
+.results{
+  flex-basis:34%''
+}
 }
 
-/* Add sub classes for link */
-
-
-
-
-/* Create hamburger menu for CSS  */
-
-
-
-/* Style p sections for descriptions here along with headers */
 p{
   font-size:14px;
   margin: 0 0 0 0;
