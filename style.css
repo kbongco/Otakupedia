@@ -61,18 +61,25 @@ h3{
 .topandtrending{
 background-color:#26532B;
 color:white;
+display:flex;
+flex-wrap:wrap;
 padding:10px 0 10px 0;
 }
 
-.todaystop{
-  display:flex;
-  flex-wrap:wrap;
-  flex-direction:column;
+.todaystop {
+  margin:0.5rem;
+  padding:20px;
+  font-size:10px;
+
 }
+
 
 .topimg{
   height:310px;
   width:150px;
+  flex: 1 1 18%;
+  margin:4px;
+  padding:20px 0;
 }
 
 /* Responsive menu */
