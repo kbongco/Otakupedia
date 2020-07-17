@@ -6,3 +6,4 @@ https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
 https://stackoverflow.com/questions/51643770/a-2x2-grid-in-flexbox
 https://www.freecodecamp.org/news/how-to-build-a-responsive-navbar-with-a-toggle-menu-using-flexbox-3438e1d08783/
 https://github.com/seanbreckenridge/mal-id-cache/blob/master/cache/anime_cache.json
+https://codepen.io/fabiobiondi/pen/PqeWGv (this is a guide I used to help with flexbox)

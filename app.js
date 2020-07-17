@@ -118,15 +118,15 @@ search.addEventListener('click', ichiAnime)
 
 //create another script to search and find randomly (POST MVP)
 //Trying to figure out randomizer --> Generates a number between 90-100 to represent mal_id to search 
-const randomAnime = (random) => {
-  random.forEach((anime) => {
+const randomAnime = (anime) => {
+
     let randomDiv = document.createElement('div')
     let randomTitle = document.createElement('h4')
     randomTitle.innerText = anime.title
     randomDiv.classList.add('randomresults')
     randomDiv.appendChild(randomTitle)
     let randomPoster = document.createElement('img')
-    randomPoster.image_url
+    randomPoster.src = anime.image_url
     randomDiv.appendChild(randomPoster)
     let button = document.createElement('button')
     let buttonText = document.createTextNode('Add to your list!')
@@ -134,8 +134,8 @@ const randomAnime = (random) => {
     button.addEventListener('click', () => userAnime(anime))
     button.appendChild(buttonText);
     randomDiv.appendChild(button)
-    document.querySelector('randomgenerated').append(randomDiv)
-  })
+    document.querySelector('.randomgenerated').append(randomDiv)
+  
 }
 
 
@@ -151,11 +151,12 @@ const randomAnimu = async () => {
   const randomAnimu = randomUrl;
   try {
     const randomResponse = await axios.get(randomUrl)
-    randomAnime(randomResponse.data.results)
+    console.log(randomResponse)
+    randomAnime(randomResponse.data)
   }catch (error) {
     console.error(`Omae wa mo shindeiru. The app is dead thanks to ${error}`)
   }
 }
 
-const random = document.querySelector('#random')
+const randomSelect = document.querySelector('#random')
 random.addEventListener('click', randomAnimu);
