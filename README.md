@@ -82,9 +82,10 @@ The priority matrix is linked <a href="https://photos.app.goo.gl/8uVCgdv83B3CCGR
 | Writing JS Code | H | 4hrs| 8hrs | 8hrs |
 | Writing pseudocode | H | 2.5hrs| 2.5hrs | 2.5hrs |
 | Testing of App| L | 3hrs| 4hrs | 4hrs |
-| Total | H | 41.5hrs| 8hrs | 8hrs |
+| Total | H | 41.5hrs| 50.5hrs | 50.5hrs |
 
 ### Code Snippet 
+This code snippet is how I created the Randomizer. 
 ```
 const randomAnime = (random) => {
   random.forEach((anime) => {
@@ -128,3 +129,8 @@ const randomAnimu = async () => {
 const random = document.querySelector('#random')
 random.addEventListener('click', randomAnimu)
 ```
+
+## Change Log
+Completely discarded local storage PMVP due to limitations of local storage with only
+being able to store strings and not images as well. My idea would be much better implemented
+if a backend were to be added so all details can be saved
