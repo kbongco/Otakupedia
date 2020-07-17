@@ -131,6 +131,6 @@ random.addEventListener('click', randomAnimu)
 ```
 
 ## Change Log
-Completely discarded local storage PMVP due to limitations of local storage with only
+Completely discarded local storage PMVP idea due to limitations of local storage with only
 being able to store strings and not images as well. My idea would be much better implemented
 if a backend were to be added so all details can be saved

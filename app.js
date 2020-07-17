@@ -32,7 +32,6 @@ const topAnime = async () => {
   const topAnime = topURL
   try {
     const response = await axios.get(topURL)
-    console.log(response.data.top)
     topFiftyAnime(response.data.top)
   } catch (error) {
     console.error(`This is my ${error}`)

@@ -7,7 +7,7 @@ Teal Blue: 007991
 Majorelle Blue: 6E44FF */
 
 
-/* Style intial nav bar for desktop view*/
+
 *{
   font-family:'Russo One';
 
@@ -54,6 +54,7 @@ h3{
 
 .heading{
   background-color:#007991;
+  color:white;
 }
 
 .topandtrending{
@@ -140,11 +141,9 @@ footer{
   width:100px;
   height:50px;
 }
-/* Create hamburger menu for CSS  */ 
-/* I had some help with w3schools for the media query
-how do i cite this??  */
+
 @media only screen and (max-device-width:768px) and (min-width:320px){
-.topandtrending{
+.topandtrending, #userlist{
   flex-flow: row wrap;
   width:unset;
   height:50%;
@@ -152,9 +151,6 @@ how do i cite this??  */
 .nav{
   overflow:hidden;
   position:relative;
-}
-a{ 
-  display:none;
 }
 #id {
   color:white;
@@ -173,7 +169,6 @@ a{
 .nav a.icon {
   background:black;
   display:block;
-  position:absolute;
   right:0;
   top: 0;
 }
@@ -184,7 +179,7 @@ a{
   flex-wrap:wrap;
 }
 .results{
-  flex-basis:34%''
+  flex-basis:34%
 }
 }
 
