@@ -139,7 +139,7 @@ const randomAnime = (anime) => {
 
 
 let animeMin = 90;
-let animeMax = 100; 
+let animeMax = 120; 
 let result = Math.floor(Math.random() * (animeMax - animeMin + 1) + animeMin)
 let malId = result
 
